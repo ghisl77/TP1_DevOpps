@@ -15,4 +15,9 @@ public class HelloController {
     public String apiHello() {
         return "Hello World - Spring Boot dans Docker!";
     }
+
+    @GetMapping("/api/cars")
+    public String carService() {
+        return "Car Rental Service - Available now!";
+    }
 }

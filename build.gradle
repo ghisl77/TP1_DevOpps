@@ -20,3 +20,10 @@ dependencies {
 jar {
     enabled = false
 }
+
+test {
+    useJUnitPlatform()
+    testLogging {
+        events "passed", "failed", "skipped"
+    }
+}

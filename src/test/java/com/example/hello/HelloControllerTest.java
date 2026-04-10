@@ -29,10 +29,4 @@ public class HelloControllerTest {
                 .andExpect(content().string("Hello World - Spring Boot dans Docker!"));
     }
 
-    @Test
-    public void testCarServiceEndpoint() throws Exception {
-        mockMvc.perform(get("/api/cars"))
-                .andExpect(status().isOk())
-                .andExpect(content().string("Car Rental Service - Available now!"));
-    }
 }

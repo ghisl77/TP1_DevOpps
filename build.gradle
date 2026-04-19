@@ -31,7 +31,6 @@ test {
     finalizedBy jacocoTestReport
 }
 
-// Configuration JaCoCo pour la couverture de code
 jacoco {
     toolVersion = "0.8.10"
 }
@@ -55,7 +54,6 @@ jacocoTestReport {
     }
 }
 
-// Configuration SonarCloud
 sonarqube {
     properties {
         property "sonar.projectKey", "ghisl77_TP1_DevOpps"
